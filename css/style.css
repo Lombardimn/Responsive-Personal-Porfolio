@@ -28,6 +28,8 @@ body {
     color: var(--text-color);
 }
 
+/* Home */
+
 .header {
     position: fixed;
     top: 0;
@@ -69,7 +71,7 @@ body {
 
 section {
     min-height: 100vh;
-    padding: 10rem 9% 2rem;
+    padding: 6rem 9% 2rem;
 }
 
 .home {
@@ -237,6 +239,8 @@ section {
     opacity: .9;
 }
 
+/* About */
+
 .about {
     display: flex;
     justify-content: center;
@@ -244,13 +248,12 @@ section {
     flex-direction: column;
     gap: 2rem;
     background: var(--second-bg-color);
-    padding-bottom: 6rem;
+    padding-bottom: 1rem;
 }
 
 .heading {
     font-size: 5rem;
-    margin-bottom: 1rem;
-    margin-top: 8rem;
+    margin-bottom: 3rem;
     text-align: center;
 }
 
@@ -293,22 +296,112 @@ section {
     text-align: center;
 }
 
-.about-content article, h3 {
+.about-content h3 {
     font-size: 2.5rem;
 }
 
-.about-content article, p {
+.about-content p {
     font-size: 1.4rem;
-    margin: 2rem 7rem 1.5rem;
+    margin: 2rem 0 3rem;
     
 }
 
 .btn-box.btns {
     display: inline-block;
     width: 15rem;
-    margin: 0;
 }
 
 .btn-box.btns a::before {
     background: var(--second-bg-color);
+}
+
+/* Education/Experience */
+
+.education {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: auto;
+    padding-bottom: 5rem;
+}
+
+.education .education-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+
+}
+
+.education-row .education-column {
+    flex: 1 1 40rem;
+}
+
+.education-column .title {
+    font-size: 2.5rem;
+    margin: 0 0 1.5rem 2rem;
+}
+
+.education-column .education-box {
+    border-left: .2rem solid var(--main-color);
+}
+
+.education-box .education-content {
+    position: relative;
+    padding-left: 2rem;
+}
+
+.education-box .education-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -1.1rem;
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--main-color);
+    border-radius: 50%;
+}
+
+.education-content .content {
+    position: relative;
+    padding: 1.5rem;
+    border: .2rem solid var(--main-color);
+    border-radius: .6rem;
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+
+.education-content .content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--second-bg-color);
+    z-index: -1;
+    transition: .5s;
+}
+
+.education-content .content:hover::before {
+    width: 100%;
+}
+
+.education-content .content .year {
+    font-size: 1.5rem;
+    color: var(--main-color);
+    padding-bottom: .5rem;
+}
+
+.education-content .content .year i {
+    padding-right: .5rem;
+}
+
+.education-content .content h3 {
+    font-size: 2rem;
+}
+
+.education-content .content p {
+    font-size: 1.4rem;
+    padding-top: .5rem;
 }

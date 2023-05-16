@@ -54,16 +54,29 @@ body {
     font-weight: 600;
 }
 
+.navbar .navbar-content {
+    display: inline;
+    align-items: center;
+}
 .navbar a {
     font-size: 1.7rem;
     color: var(--text-color);
     font-weight: 500;
-    margin-left: 3.5rem;
+    margin-left: 3rem;
+    transition: .3s;
+}
+
+.navbar i {
+    font-size: 1.6rem;
+    color: var(--text-color);
+    margin-left: .5rem;
     transition: .3s;
 }
 
 .navbar a:hover,
-.navbar a.active {
+.navbar a.active,
+.navbar i:hover,
+.navbar i.active     {
     color: var(--main-color);
 }
 
@@ -122,7 +135,8 @@ section {
 }
 
 .home-content p {
-    font-size: 2rem; /*1.6rem*/
+    font-size: 1.4rem;
+    font-weight: 500;
     margin: 2rem 0 4rem;
     font-family: 'Biryani', sans-serif; /*Poppins*/
 }
@@ -711,6 +725,13 @@ section {
         transition-delay: 0s;
     }
 
+    .navbar .navbar-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
     .navbar a {
         display: block;
         font-size: 2rem;
@@ -753,6 +774,13 @@ section {
     .navbar.active {
         left: 0;
         transition-delay: 0s;
+    }
+
+    .navbar .navbar-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
     }
 
     .navbar a {

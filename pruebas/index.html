@@ -5,27 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Link Style -->
-    <link rel="stylesheet" href="./css/normalize/reset.css">
-    <link rel="stylesheet" href="./css/media/preloarder.css">
-    <link rel="stylesheet" href="./css/media/keyFrames.css">
-    <link rel="stylesheet" href="./css/modules/header.css">
-    <link rel="stylesheet" href="./css/modules/main.css">
-    <link rel="stylesheet" href="./css/modules/footer.css">
+    <!-- CSS module -->
+    <link rel="stylesheet" href="./CSS/reset.css">
+    <link rel="stylesheet" href="./CSS/keyFrames.css">
+    <link rel="stylesheet" href="./CSS/preloarder.css">
+    <link rel="stylesheet" href="./CSS/header.css">
+    <link rel="stylesheet" href="./CSS/app.css">
+    <link rel="stylesheet" href="./CSS/footer.css">
 
-    <!-- Source Font and Icons -->
     <script src="https://kit.fontawesome.com/4716696ddc.js" crossorigin="anonymous"></script>
-    
+
     <title>Lombardi.</title>
 </head>
 <body>
     <!-- methodology BEM (BLOCK ELEMENT MODIFIER) -->
 
-    <article class="loading__section" id="loading">
+    <section class="loading__section" id="loading">
         <span class="loader"></span>
         <h5 class="loading__h5">LOADING...</h5>
-    </article>
-
+    </section>
     <header class="header">
         <h1 class="header__h1"><a href="#" class="header__a">Lombardi.</a></h1>
         <i class="fa-solid fa-bars header__i"></i>
@@ -58,87 +56,79 @@
             </ul>
         </nav>
     </header>
-
     <main class="main">
-
-        <section class="home__section active" id="home">
-            <article class="home__article">
-                <div class="home__div home__div--leng">
-                    <img src="./img/icons/us.png" class="home__img flag__us"></img>
-                    <img src="./img/icons/es.png" class="home__img flag__es"></img>
-                    <input type="checkbox" name="checkLanguage" class="home__input home__input--leng">
-                </div>
-            </article>
-
-            <article class="home__article home__article--content">
-                <div class="home__div home__div--txt">
-                    <h2 class="home__h2"><span class="home__span global__span">Hi there 👋!</span><br>I'm Matias Lombardi</h2>
-                    <div class="home__div home__div--h3">
-                        <h3 class="home__h3">Analyst Functional & Frontend Developer</h3>
+        <section class="home__section" id="home">
+            <!-- <aside>
+                <article>
+                    <div class="aside__div">
+                        <input type="checkbox" name="" class="aside__input">
+                        <img src="./IMG/icons/us.png" class="button__img--2 flag__us"></img>
+                        <img src="./IMG/icons/es.png" class="button__img--3 flag__es"></img>
                     </div>
-                    <p class="home__p">I have been working in the programming world for +5 years. Currently I work as a Functional Analyst and I am a 
-                        self-taught web developer. During my career in systems I have been fond of programming so I decided to expand my knowledge as a developer. 
-                        Through my experience in Data Analysis, I have acquired skills in programming, planning and complex problem solving.<br>
-                        If you are interested in knowing more about me you are in the right place.
-                    </p>
+                </article>
+            </aside>  -->
+            <div class="home__div">
+                <h2 class="home__h2"><span class="home__span">Hi there 👋!</span><br>I'm Matias Lombardi</h2>
+                <div class="home__div home__div--h3">
+                    <h3 class="home__h3">Analyst Functional & Frontend Developer</h3>
                 </div>
-                <div class="home__div home__div--img">
-                    <img src="./img/profile-1.png" alt="Primera foto de perfil." class="home__img home__img--user">
-                </div>
-            </article>
-
-            <article class="home__article global__btn--box">
+                <p class="home__p">I have been working in the programming world for more than 5 years. Currently I work as a Functional Analyst and I am a 
+                    self-taught web developer. During my career in systems I have been fond of programming so I decided to expand my knowledge as a developer. 
+                    Through my experience in Data Analysis, I have acquired skills in programming, planning and complex problem solving.<br>
+                    If you are interested in knowing more about me you are in the right place.
+                </p>
+            </div>
+            <div class="home__div global__div--btn">
                 <button class="home__btn global__btn">Download CV</button>
                 <button class="home__btn global__btn">Let's Talk</button>
-            </article>
-
-            <article class="home__article home__article--rrss">
+            </div>
+            <article class="home__div home__div--rrss">
+                <div class="home__div--rs">
                     <a href="https://github.com/Lombardimn" class="home__a" target="_blank"><i class="fa-brands fa-github home__i"></i></a>
+                </div>
+                <div class="home__div--rs">
                     <a href="https://www.instagram.com/lombardimn/" class="home__a" target="_blank"><i class="fa-brands fa-instagram home__i"></i></a>
+                </div>
+                <div class="home__div--rs">
                     <a href="https://linkedin.com/in/mnlombardi" class="home__a" target="_blank"><i class="fa-brands fa-linkedin home__i"></i></a>
-            </article>
-        </section>
-
-        <section class="about__section" id="about">
-            <article class="about__article">
-                <h2 class="about__h2 global__h2">About <span class="about__span global__span">Me!</span></h2>
-                <div class="about__div">
-                    <img src="./img/profile-2.png" alt="Segunda foto de perfil." class="about__img">
-                    <span class="about__span--cir"></span>
                 </div>
             </article>
-
+        </section>
+        <section class="about__section" id="about">
+            <h2 class="about__h2 global__h2">About <span class="about__span global__span">Me!</span></h2>
+            <div class="about__div">
+                <img src="./IMG/profile-pic14.png" alt="Segunda foto de perfil del creador del perfolio." class="about__img">
+                <span class="about__span--cir"></span>
+            </div>
             <article class="about__article">
                 <h3 class="about__h3">My role as Functional Analyst</h3>
                 <p class="about__p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quibusdam sed libero magnam recusandae autem quis, dicta fuga, 
                     ipsum dignissimos mollitia similique ipsa tempora debitis, dolores rerum. Ipsa perspiciatis ipsum, cumque, totam eos maiores iste, reprehenderit similique 
                     iusto dolores amet maxime? Quisquam reprehenderit est repellendus sapiente necessitatibus quod, blanditiis temporibus.</p>
             </article>
-
             <article class="about__article">
                 <h3 class="about__h3">My role as Frontend Developer</h3>
                 <p class="about__p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quibusdam sed libero magnam recusandae autem quis, dicta fuga, 
                     ipsum dignissimos mollitia similique ipsa tempora debitis, dolores rerum. Ipsa perspiciatis ipsum, cumque, totam eos maiores iste, reprehenderit similique 
                     iusto dolores amet maxime? Quisquam reprehenderit est repellendus sapiente necessitatibus quod, blanditiis temporibus.</p>
             </article>
-
-            <article class="about__article global__btn--box">
+            <div class="global__div--btn btns">
                 <button class="about__btn global__btn">Read More</button>
-            </article>
+            </div>
         </section>
-
+        
         <section class="project__section" id="project">">>>WORKING ON IT<<<"</section>
+        
         <section class="skill__section" id="skill">">>>WORKING ON IT<<<"</section>
-
+        
         <section class="education__section" id="education">
             <h2 class="education__h2 global__h2">My <span class="education__span global__span">Journey</span></h2>
-            <div class="education__div--row">
-                <div class="education__div--column">
+            <div class="education__row">
+                <div class="education__column">
                     <h3 class="education__h3">Education</h3>
-                    
-                    <div class="education__div--box">
+                    <div class="education__box">
                         <article class="education__article">
-                            <div class="education__div--content">
+                            <div class="education__content">
                                 <span class="education__span--year"><i class="fa-solid fa-calendar-days global__i"></i>2018 - Present</span>
                                 <h4 class="education__h4">Information Systems Engineering</h4>
                                 <p class="education__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero optio quidem incidunt illo excepturi saepe totam iusto dicta 
@@ -146,7 +136,7 @@
                             </div>
                         </article>
                         <article class="education__article">
-                            <div class="education__div--content">
+                            <div class="education__content">
                                 <span class="education__span--year"><i class="fa-solid fa-calendar-days global__i"></i>2015 - 2018</span>
                                 <h4 class="education__h4">Industrial Engineering</h4>
                                 <p class="education__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero optio quidem incidunt illo excepturi saepe totam iusto dicta 
@@ -154,7 +144,7 @@
                             </div>
                         </article>
                         <article class="education__article">
-                            <div class="education__div--content">
+                            <div class="education__content">
                                 <span class="education__span--year"><i class="fa-solid fa-calendar-days global__i"></i>2007 - 2010</span>
                                 <h4 class="education__h4">Electronics Technician - Hardware</h4>
                                 <p class="education__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero optio quidem incidunt illo excepturi saepe totam iusto dicta 
@@ -163,12 +153,11 @@
                         </article>
                     </div>
                 </div>
-
-                <div class="education__div--column">
+                <div class="education__column">
                     <h3 class="education__h3">Experience</h3>
-                    <div class="education__div--box">
+                    <div class="education__box">
                         <article class="education__article">
-                            <div class="education__div--content">
+                            <div class="education__content">
                                 <span class="education__span--year"><i class="fa-solid fa-calendar-days global__i"></i>2022 - Present</span>
                                 <h4 class="education__h4">Web Developer - Core Consulting S.A.</h4>
                                 <p class="education__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero optio quidem incidunt illo excepturi saepe totam iusto dicta 
@@ -176,7 +165,7 @@
                             </div>
                         </article>
                         <article class="education__article">
-                            <div class="education__div--content">
+                            <div class="education__content">
                                 <span class="education__span--year"><i class="fa-solid fa-calendar-days global__i"></i>2021 - 2022</span>
                                 <h4 class="education__h4">Analyst Functional SAP SRM - Core Consulting S.A.</h4>
                                 <p class="education__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero optio quidem incidunt illo excepturi saepe totam iusto dicta 
@@ -184,7 +173,7 @@
                             </div>
                         </article>
                         <article class="education__article">
-                            <div class="education__div--content">
+                            <div class="education__content">
                                 <span class="education__span--year"><i class="fa-solid fa-calendar-days global__i"></i>2018 - 2021</span>
                                 <h4 class="education__h4">Analyst Technical/Functional SAP - Indra S.A.</h4>
                                 <p class="education__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero optio quidem incidunt illo excepturi saepe totam iusto dicta 
@@ -193,59 +182,49 @@
                         </article>
                     </div>
                 </div>
-                
             </div>
         </section>
-        
         <section class="contact__section" id="contact">
             <h2 class="contact__h2 global__h2">Contact <span class="global__span">Me!</span> </h2>
             <form action="#" class="contact__form">
-                <div class="contact__div--fbox">
-                    <div class="contact__div--field">
-                        <input type="text" placeholder="Full Name" required class="contact__input" name="fullName">
+                <div class="contact__box">
+                    <div class="contact__field">
+                        <input type="text" placeholder="Full Name" required class="contact__input">
                         <span class="contact__span"></span>
                     </div>
-                    <div class="contact__div--field">
-                        <input type="text" placeholder="Email Address" class="contact__input" name="emailAdress" required>
+                    <div class="contact__field">
+                        <input type="text" placeholder="Email Address" class="contact__input" required>
                         <span class="contact__span"></span>
                     </div>
                 </div>
-                <div class="contact__div--fbox">
-                    <div class="contact__div--field">
-                        <input type="tel" maxlength="13" placeholder="Mobile Number (13 characters max.)" class="contact__input" 
-                            name="mobileNumber" required>
+                <div class="contact__box">
+                    <div class="contact__field">
+                        <input type="tel" maxlength="13" placeholder="Mobile Number (13 characters max.)" class="contact__input" required>
                         <span class="contact__span"></span>
                     </div>
-                    <div class="contact__div--field">
-                        <input type="text" placeholder="Email Subject" class="contact__input" name="emailsubject" required>
+                    <div class="contact__field">
+                        <input type="text" placeholder="Email Subject" class="contact__input" required>
                         <span class="contact__span"></span>
                     </div>
                 </div>
                 <div class="contact__box--txt">
-                    <textarea name="message" id="" cols="30" rows="10" placeholder="You Menssage" class="contact__input contact__input--txt" 
-                        name="message" required></textarea>
+                    <textarea name="message" id="" cols="30" rows="10" placeholder="You Menssage" class="contact__input contact__input--txt" required></textarea>
                     <span class="contact__span"></span>
                 </div>
-                <div class="contact__article--box global__btn--box">
+                <div class="global__div--btn btns">
                     <button type="submit" class="global__btn">Submit</button>
                 </div>
             </form>
         </section>
-
-        <footer class="footer">
+    </main>
+    <footer class="footer">
             <article class="footer__article">
                 <p class="footer__p">Copyright &copy; 2023 by Lombardi Matias | All Rights Reserverd.</p>
             </article>
             <article class="footer__article">
                 <a href="#" class="footer__a"><i class="fa-solid fa-angles-up footer__i"></i></a>
             </article>
-        </footer>
-    
-        <!-- Source Script -->
-        <script src="./js/app.js"></script>
-    </main>
+    </footer>
+    <script src="./JS/app.js"></script>
 </body>
 </html>
-
-
-

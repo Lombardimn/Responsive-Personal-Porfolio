@@ -112,54 +112,82 @@ section {
 
 .home__leng-h6{
     font-size: .8rem;
+    font-family: 'Biryani', sans-serif;
+    font-style: italic;
     margin-right: 0.6rem;
 }
 
-.home__input--leng{
+.home__label--lbl{
     width: 4rem;
     height: 2rem;
-    appearance: none;
-    background-color: var(--second-bg-color);
-    outline: none;
-    border-radius: 1.25rem;
-    box-shadow: inset 0 0 .3125rem rgba(0, 0, 0, .2);
-    margin: .1875rem 0;
-}
-
-.home__input--leng:checked{
-    background-color: var(--main-color);
-}
-
-.home__input--leng::before{
-    content: '';
-    position: absolute;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 50%;
-    top: 0;
-    left: 0;
-    background-color: var(--text-color);
-    transform: scale(1.1);
-    box-shadow: inset 0 .125rem .3125rem rgba(0, 0, 0, .2);
-    transition: .5s;
-    z-index: 50;
-}
-
-.home__input:checked::before {
-    left: 2.2rem;
-}
-
-.home__img{
-    width: 1.5rem;
-    height: 1.5rem;
-    line-height: 1rem;
-    margin: 0.2rem;
-    right: -3.9rem;
-    opacity: 0.8;
-    background: none;
-    top: auto;
     position: relative;
-    z-index: 30;
+    display: block;
+    background-color: var(--bg-color);
+    border-radius: 2rem;
+    box-shadow: inset 0 .3125rem 1rem rgba(0, 0, 0, .4), 
+        inset 0 -.3125rem 1rem rgba(255, 255, 255, .4);
+    cursor: pointer;
+    transition: 1s;
+}
+
+.home__label--lbl::after{
+    content: '';
+    width: 1.6875rem;
+    height: 1.6875rem;
+    position: absolute;
+    top: .15625rem;
+    left: .15625rem;
+    background: linear-gradient(180deg, var(--text-color), var(--bx-border));
+    border-radius: 1.6875rem;
+    box-shadow: 0 .3125rem .625rem rgba(0, 0, 0, .2);
+    transition: 1s;
+}
+
+.home__input--leng{
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+.home__input--leng:checked + .home__label--lbl{
+    background-color: var(--second-bg-color);
+}
+
+.home__input--leng:checked  + .home__label--lbl::after {
+    left: 3.84375rem;
+    transform: translateX(-100%);
+    background: linear-gradient(180deg, var(--bx-border), var(--main-color));
+}
+
+.home__label--lbl:active::after{
+    width: 2.625rem;
+}
+
+.label__img{
+    position: absolute;
+    width: 1rem;
+    top: .5rem;
+    z-index: 100;
+}
+
+.label__img-us{
+    left: .5rem;
+    opacity: 1;
+    transition: 1s;
+}
+
+.label__img-es{
+    left: 2.5rem;
+    opacity: 0.2;
+    transition: 1s;
+}
+
+.home__input--leng:checked + label .label__img-us {
+    opacity: 0.2;
+}
+
+.home__input--leng:checked + label .label__img-es {
+    opacity: 1;
 }
 
 .home__div--txt{

@@ -29,15 +29,15 @@ window.onscroll = () => {
 
 // Select language
 
-let btnSwitch = document.querySelector('.home__input--leng');
+const btnSwitch = document.querySelector('.home__input--leng');
 
-btnSwitch.addEventListener('click', ()=>{
+btnSwitch.addEventListener('change', function(){
     let flagState = btnSwitch.checked;
 
     if (flagState === true){
-        location.href = './html/index-es.html';
+        window.location.href = './html/index-es.html';
     } else {
-        location.href = '../index.html'
+        window.location.href = '../index.html';
     }
 });
 

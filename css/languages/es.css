@@ -105,6 +105,16 @@ section {
     outline: none;
 }
 
+.home__article--leng{
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.home__leng-h6{
+    font-size: .8rem;
+    margin-right: 0.6rem;
+}
+
 .home__input--leng{
     width: 4rem;
     height: 2rem;

@@ -14,37 +14,32 @@
     --color-secundario: #f0f0f0;
     --tipo-principal: Helvetica, Arial, sans-serif;
     --tipo-secundaria: Verdana;
+    --tp-custom:'Poppins', sans-serif;
 
-    /* Custom value primary = #112e42 */
+
+    /* Colors design */
+
+    --color-sc-1: #E2F263;
+    --color-sc-2: #EEF280;
+    --color-sc-3: #F1F2D8;
+    --color-sc-4: #223D44;
+    --color-sc-5: #011826;
     
-    /* monochromatic */
-    --scaleColor-1: #0E0723;
-    --scaleColor-2: #0B092B;
-    --scaleColor-3: #0C1233;
-    --scaleColor-4: #0E1F3B;
-    --scaleColor-5: #112e42;
-    --scaleColor-6: #30525C;
-    --scaleColor-7: #4F7476;
-    --scaleColor-8: #6F8F8A;
-    --scaleColor-9: #8EA8A0;
-    --scaleColor-10: #AEC1B7;
-    --scaleColor-11: #CEDAD2;
+    /* backgrounds */
+    --bg-color: var(--color-sc-5);
+    --second-bg-color: var(--color-sc-4);
+    --text-color: var(--color-sc-3);
+    --main-color:var(--color-sc-1);
 
-    /* complementary */
-    --compColor-1: #175F8F;
-    --compColor-2: #336A8F;
-    --compColor-3: #8F5809;
-    --compColor-4: #422E11;
-
-    /* variables */
-
-    --bg-color: var(--scaleColor-5);
-    --second-bg-color: var(--scaleColor-6);
-    --text-color: var(--scaleColor-11);
-    /* --main-color: #00abf0; */
-    --main-color:var(--compColor-3);
-
-    --tp-custom:'Poppins', /*'Biryani', 'Lekton',*/ sans-serif;
+    /* Elements */
+    --border-1: linear-gradient(
+        to right,
+        transparent 100%,
+        var(--compColor-5) 0%,
+        var(--compColor-4) 100%
+    );
+    --bx-shadow: rgba(0, 0, 0, .2);
+    --bx-border: var(--color-sc-2);
 }
 
 /* Adaptation to dark mode */

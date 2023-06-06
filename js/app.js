@@ -1,9 +1,4 @@
-// Toggle icon navbar
-
 // Scroll selections
-let sections = document.querySelectorAll('section');
-let navlink = document.querySelectorAll('header nav li')
-
 window.onscroll = () => {
     sections.forEach(sec =>{
         let top = window.scrollY;
@@ -20,7 +15,6 @@ window.onscroll = () => {
         };
     });
 
-
     // Sticky header
     let header = document.querySelector('header');
 
@@ -28,9 +22,6 @@ window.onscroll = () => {
 }
 
 // Select language
-
-const btnSwitch = document.querySelector('.home__input--leng');
-
 btnSwitch.addEventListener('change', function(){
     let flagState = btnSwitch.checked;
 
@@ -42,8 +33,6 @@ btnSwitch.addEventListener('change', function(){
 });
 
 //Effect Loading
-let preloading = document.querySelector('.loading__section')
-
 window.addEventListener('load', () =>{
         preloading.style.display = 'none';
 })

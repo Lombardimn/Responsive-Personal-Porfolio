@@ -7,6 +7,7 @@
 
     <!-- Link Style -->
     <link rel="stylesheet" href="./css/normalize/reset.css">
+    <link rel="stylesheet" href="./css/media/responsive.css">
     <link rel="stylesheet" href="./css/media/preloarder.css">
     <link rel="stylesheet" href="./css/media/keyFrames.css">
     <link rel="stylesheet" href="./css/modules/header.css">
@@ -28,9 +29,9 @@
 
     <header class="header">
         <h1 class="header__h1"><a href="#" class="header__a">Lombardi.</a></h1>
-        <i class="fa-solid fa-bars header__i"></i>
-        <nav class="header__nav">
-            <ul class="header__ul">
+        <i class="fa-solid fa-bars header__i" id="menu__icon"></i>
+        <nav class="header__nav" id="header__nav">
+            <ul class="header__ul" id="header__ul">
                 <li class="header__li active" id="li-home">
                     <a href="#home" class="header__a header__a--nav">Home</a>
                     <i class="fa-solid fa-house-chimney header__i"></i>
@@ -63,7 +64,7 @@
 
         <section class="home__section active" id="home">
             <article class="home__article home__article--leng">
-                <h6 class="home__leng-h6">Idioma</h6>
+                <h6 class="home__leng-h6">Language</h6>
                 <div class="home__div home__div--leng">
                     <input type="checkbox" class="home__input home__input--leng" id="home__label">
                     <label for="home__label" class="home__label--lbl">
@@ -384,7 +385,9 @@
         </footer>
     
         <!-- Source Script -->
+        <script src="./js/variables.js"></script>
         <script src="./js/app.js"></script>
+        <script src="./js/navbar.js"></script>
     </main>
 </body>
 </html>

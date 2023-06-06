@@ -54,7 +54,6 @@ section {
     font-size: .8rem;
     font-family: 'Biryani', sans-serif;
     font-style: italic;
-    margin-right: 0.6rem;
 }
 
 .home__label--lbl{
@@ -544,12 +543,6 @@ section {
     font-size: 0.8rem;
     text-align: center;
 
-}
-
-.global__btn--box{
-    width: 20rem;
-    height: 3.2rem;
-    margin-bottom: 1rem;
 }
 
 .global__btn{

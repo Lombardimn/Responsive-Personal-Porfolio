@@ -6,7 +6,9 @@ import indexRoutes from './routes/index.js'
 const app = express();
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
-app.use(express.static('public'));
+// app.use(express.static('public'));
+app.use('/static', express.static('public'));
+
 
 app.use(indexRoutes);
 app.listen(3000, () =>{

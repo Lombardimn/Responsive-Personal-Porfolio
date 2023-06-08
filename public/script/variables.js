@@ -11,4 +11,8 @@ let navlink = document.querySelectorAll('header nav li');
 const btnSwitch = document.querySelector('.home__input--leng');
 
 // Loading ----->
-let preloading = document.querySelector('.loading__section')
+let preloading = document.querySelector('.loading__section');
+
+
+// Buttons ----->
+let dcvBtn = document.getElementById('home__dcv');

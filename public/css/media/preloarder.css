@@ -1,3 +1,8 @@
+.loading__section{
+width: 100vh;
+height: 100vh;
+}
+
 .loader {
     width: 48px;
     height: 40px;

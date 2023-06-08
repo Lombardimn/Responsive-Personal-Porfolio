@@ -6,9 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Link Style -->
-    <link rel="stylesheet" href="../css/normalize/reset.css">
-    <link rel="stylesheet" href="../css/media/preloarder.css">
-    <link rel="stylesheet" href="../css/languages/es.css">
+    <link rel="stylesheet" href="/css/normalize/reset.css">
+    <link rel="stylesheet" href="/css/media/preloarder.css">
+    <link rel="stylesheet" href="/css/modules/header.css">
+    <link rel="stylesheet" href="/css/modules/main.css">
+    <link rel="stylesheet" href="/css/modules/footer.css">
+    <link rel="stylesheet" href="/css/media/responsive.css">
+    <link rel="stylesheet" href="/css/media/keyFrames.css">
 
     <!-- Source Font and Icons -->
     <script src="https://kit.fontawesome.com/4716696ddc.js" crossorigin="anonymous"></script>
@@ -18,10 +22,10 @@
 <body>
     <!-- methodology BEM (BLOCK ELEMENT MODIFIER) -->
 
-    <section class="loading__section" id="loading">
+    <article class="loading__section" id="loading">
         <span class="loader"></span>
-        <h5 class="loading__h5">CARGANDO...</h5>
-    </section>
+        <h5 class="loading__h5">LOADING...</h5>
+    </article>
 
     <header class="header">
         <h1 class="header__h1"><a href="#" class="header__a">Lombardi.</a></h1>
@@ -29,27 +33,27 @@
         <nav class="header__nav" id="header__nav">
             <ul class="header__ul" id="header__ul">
                 <li class="header__li active" id="li-home">
-                    <a href="#home" class="header__a header__a--nav">Inicio</a>
+                    <a href="#home" class="header__a header__a--nav">Home</a>
                     <i class="fa-solid fa-house-chimney header__i"></i>
                 </li>
                 <li class="header__li" id="li-about">
-                    <a href="#about" class="header__a header__a--nav">Sobre Mí</a>
+                    <a href="#about" class="header__a header__a--nav">About</a>
                     <i class="fa-solid fa-user-tie header__i"></i>
                 </li>
                 <li class="header__li" id="li-project">
-                    <a href="#project" class="header__a header__a--nav">Projectos</a>
+                    <a href="#project" class="header__a header__a--nav">Project</a>
                     <i class="fa-solid fa-file-code header__i"></i>
                 </li>
                 <li class="header__li" id="li-skill">
-                    <a href="#skill" class="header__a header__a--nav">Habilidades</a>
+                    <a href="#skill" class="header__a header__a--nav">Skill</a>
                     <i class="fa-solid fa-medal header__i"></i>
                 </li>
                 <li class="header__li" id="li-education">
-                    <a href="#education" class="header__a header__a--nav">Educación</a>
+                    <a href="#education" class="header__a header__a--nav">Education</a>
                     <i class="fa-solid fa-book header__i"></i>
                 </li>
                 <li class="header__li" id="li-contact">
-                    <a href="#contact" class="header__a header__a--nav">Contacto</a>
+                    <a href="#contact" class="header__a header__a--nav">Contact</a>
                     <i class="fa-solid fa-envelope-open-text header__i"></i>
                 </li>
             </ul>
@@ -58,39 +62,38 @@
 
     <main class="main">
 
-        <section class="home__section" id="home">
+        <section class="home__section active" id="home">
             <article class="home__article home__article--leng">
-                <h6 class="home__leng-h6">Idioma</h6>
+                <h6 class="home__leng-h6">Language</h6>
                 <div class="home__div home__div--leng">
-                    <input type="checkbox" class="home__input home__input--leng" id="home__label" checked>
+                    <input type="checkbox" class="home__input home__input--leng" id="home__label">
                     <label for="home__label" class="home__label--lbl">
-                        <img src="../IMG/icons/us.png" class="label__img label__img-us"></img>
-                        <img src="../IMG/icons/es.png" class="label__img label__img-es"></img>
+                        <img src="/img/icons/us.webp" class="label__img label__img-us"></img>
+                        <img src="/img/icons/es.webp" class="label__img label__img-es"></img>
                     </label>
                 </div>
             </article>
 
             <article class="home__article home__article--content">
                 <div class="home__div home__div--txt">
-                    <h2 class="home__h2"><span class="home__span global__span">Hola a Todos 👋!</span><br>Me llamo Matias Lombardi</h2>
+                    <h2 class="home__h2"><span class="home__span global__span">Hi there 👋!</span><br>I'm Matias Lombardi</h2>
                     <div class="home__div home__div--h3">
-                        <h3 class="home__h3">Soy Analista Funcional & Desarrollador Frontend</h3>
+                        <h3 class="home__h3">Analyst Functional & Frontend Developer</h3>
                     </div>
-                    <p class="home__p">Trabajo en el mundo de la programación desde hace mas de 5 años. Actualmente trabajo como Analista de Datos y 
-                        soy un desarrollador WEB autodidacta. Durante mi carrera en sistemas me he encariñado con la programacion por lo que decidi
-                        ampliar mis conocimientos como desarrollador. A través de mi experiencia en Análisis de Datos, he adquirido habilidades en programación, planificación y resolución 
-                        de problemas complejos.<br>
-                        Si te interesa conocer mas de mí estas en el lugar correcto 👨‍💻!!!
+                    <p class="home__p">I have been working in the programming world for +5 years. Currently I work as a Functional Analyst and I am a 
+                        self-taught web developer. During my career in systems I have been fond of programming so I decided to expand my knowledge as a developer. 
+                        Through my experience in Data Analysis, I have acquired skills in programming, planning and complex problem solving.<br>
+                        If you are interested in knowing more about me you are in the right place.
                     </p>
                 </div>
                 <div class="home__div home__div--img">
-                    <img src="../img/profile/profile-1.png" alt="Primera foto de perfil." class="home__img home__img--user">
+                    <img src="/img/profile/profile-sc2sf.webp" alt="Primera foto de perfil." class="home__img home__img--user">
                 </div>
             </article>
 
             <article class="home__article global__btn--box">
-                <button class="home__btn global__btn">Descargar CV</button>
-                <button class="home__btn global__btn">Hablemos</button>
+                <button class="home__dcv global__btn" id="home__dcv">Download CV</button>
+                <button class="home__lt global__btn">Let's Talk</button>
             </article>
 
             <article class="home__article home__article--rrss">
@@ -102,35 +105,35 @@
 
         <section class="about__section" id="about">
             <article class="about__article">
-                <h2 class="about__h2 global__h2">Sobre <span class="about__span global__span">Mí!</span></h2>
+                <h2 class="about__h2 global__h2">About <span class="about__span global__span">Me!</span></h2>
                 <div class="about__div">
-                    <img src="../img/profile/profile-2.png" alt="Segunda foto de perfil." class="about__img">
+                    <img src="/img/profile/profile-2.webp" alt="Segunda foto de perfil." class="about__img">
                     <span class="about__span--cir"></span>
                 </div>
             </article>
 
             <article class="about__article">
-                <h3 class="about__h3">My rol como Analista Funcional</h3>
+                <h3 class="about__h3">My role as Functional Analyst</h3>
                 <p class="about__p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quibusdam sed libero magnam recusandae autem quis, dicta fuga, 
                     ipsum dignissimos mollitia similique ipsa tempora debitis, dolores rerum. Ipsa perspiciatis ipsum, cumque, totam eos maiores iste, reprehenderit similique 
                     iusto dolores amet maxime? Quisquam reprehenderit est repellendus sapiente necessitatibus quod, blanditiis temporibus.</p>
             </article>
 
             <article class="about__article">
-                <h3 class="about__h3">Mi rol como Desarrollador Frontend</h3>
+                <h3 class="about__h3">My role as Frontend Developer</h3>
                 <p class="about__p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quibusdam sed libero magnam recusandae autem quis, dicta fuga, 
                     ipsum dignissimos mollitia similique ipsa tempora debitis, dolores rerum. Ipsa perspiciatis ipsum, cumque, totam eos maiores iste, reprehenderit similique 
                     iusto dolores amet maxime? Quisquam reprehenderit est repellendus sapiente necessitatibus quod, blanditiis temporibus.</p>
             </article>
 
             <article class="about__article global__btn--box">
-                <button class="about__btn global__btn">Ver más</button>
+                <button class="about__btn global__btn">Read More</button>
             </article>
         </section>
 
         <section class="project__section" id="project">
             <article class="project__article project__article--h2">
-                <h2 class="project__h2 global__h2">Mis <span class="project__span global__span">Proyectos</span></h2>
+                <h2 class="project__h2 global__h2">My <span class="project__span global__span">Proyects</span></h2>
             </article>
 
             <article class="project__article">
@@ -138,15 +141,22 @@
                     <div class="project__card">
                         <div class="project__card--front global__face">
                             <div class="project__info project__info--front">
-                                <img src="../img/proyects/porfolioResponsive.png" alt="" class="project__img">
-                                <h3 class="project__h3">Porfolio Responsive</h3>
+                                <img src="./img/proyects/porfolioResponsive.png" alt="" class="project__img">
+                                <div class="project__clipPath">
+                                    <h3 class="project__h3">Porfolio Responsive</h3>
+                                    <div class="path__div--f1 path__div"></div>
+                                    <div class="path__div--f2 path__div"></div>
+                                    <div class="path__div--f3 path__div"></div>
+                                    <div class="path__div--f4 path__div"></div>
+                                    <div class="path__div--f5 path__div"></div>
+                                </div>
                             </div>
                         </div>
                         <div class="project__card--back global__face">
                             <div class="project__info project__info--back">
                                 <h4 class="project__h4">Lombardi.</h4>
-                                <p class="project__p">Mi primer proyecto, desarrollado con HTML, CSS y JavaScript vanilla; en él he aplicado la metodología BEM y la modulación 
-                                    de código.</p>
+                                <p class="project__p">My first project, developed with HTML, CSS and vanilla JavaScript; in it I have applied the BEM methodology 
+                                    and code modulation.</p>
                                 <a class="project__btn global__btn" target="_blank" href="https://lombardimn.github.io/Responsive-Personal-Porfolio/">See more</a>
                             </div>
                         </div>
@@ -157,8 +167,15 @@
                     <div class="project__card">
                         <div class="project__card--front global__face">
                             <div class="project__info project__info--front">
-                                <img src="../img/proyects/porfolioResponsive.png" alt="" class="project__img">
-                                <h3 class="project__h3">Porfolio Responsive</h3>
+                                <img src="./img/proyects/porfolioResponsive.png" alt="" class="project__img">
+                                <div class="project__clipPath">
+                                    <h3 class="project__h3">Porfolio Responsive</h3>
+                                    <div class="path__div--f1 path__div"></div>
+                                    <div class="path__div--f2 path__div"></div>
+                                    <div class="path__div--f3 path__div"></div>
+                                    <div class="path__div--f4 path__div"></div>
+                                    <div class="path__div--f5 path__div"></div>
+                                </div>
                             </div>
                         </div>
                         <div class="project__card--back global__face">
@@ -176,8 +193,15 @@
                     <div class="project__card">
                         <div class="project__card--front global__face">
                             <div class="project__info project__info--front">
-                                <img src="../img/proyects/porfolioResponsive.png" alt="" class="project__img">
-                                <h3 class="project__h3">Porfolio Responsive</h3>
+                                <img src="./img/proyects/porfolioResponsive.png" alt="" class="project__img">
+                                <div class="project__clipPath">
+                                    <h3 class="project__h3">Porfolio Responsive</h3>
+                                    <div class="path__div--f1 path__div"></div>
+                                    <div class="path__div--f2 path__div"></div>
+                                    <div class="path__div--f3 path__div"></div>
+                                    <div class="path__div--f4 path__div"></div>
+                                    <div class="path__div--f5 path__div"></div>
+                                </div>
                             </div>
                         </div>
                         <div class="project__card--back global__face">
@@ -195,8 +219,15 @@
                     <div class="project__card">
                         <div class="project__card--front global__face">
                             <div class="project__info project__info--front">
-                                <img src="../img/proyects/porfolioResponsive.png" alt="" class="project__img">
-                                <h3 class="project__h3">Porfolio Responsive</h3>
+                                <img src="./img/proyects/porfolioResponsive.png" alt="" class="project__img">
+                                <div class="project__clipPath">
+                                    <h3 class="project__h3">Porfolio Responsive</h3>
+                                    <div class="path__div--f1 path__div"></div>
+                                    <div class="path__div--f2 path__div"></div>
+                                    <div class="path__div--f3 path__div"></div>
+                                    <div class="path__div--f4 path__div"></div>
+                                    <div class="path__div--f5 path__div"></div>
+                                </div>
                             </div>
                         </div>
                         <div class="project__card--back global__face">
@@ -214,8 +245,15 @@
                     <div class="project__card">
                         <div class="project__card--front global__face">
                             <div class="project__info project__info--front">
-                                <img src="../img/proyects/porfolioResponsive.png" alt="" class="project__img">
-                                <h3 class="project__h3">Porfolio Responsive</h3>
+                                <img src="./img/proyects/porfolioResponsive.png" alt="" class="project__img">
+                                <div class="project__clipPath">
+                                    <h3 class="project__h3">Porfolio Responsive</h3>
+                                    <div class="path__div--f1 path__div"></div>
+                                    <div class="path__div--f2 path__div"></div>
+                                    <div class="path__div--f3 path__div"></div>
+                                    <div class="path__div--f4 path__div"></div>
+                                    <div class="path__div--f5 path__div"></div>
+                                </div>
                             </div>
                         </div>
                         <div class="project__card--back global__face">
@@ -230,20 +268,22 @@
                 </div>
             </article>
         </section>
-        
-        <section class="skill__section" id="skill">">>>TRABAJANDO EN ELLO<<<"</section>
+
+        <section class="skill__section" id="skill">
+            <h2 class="skill__h2">">>>WORKING ON IT<<<"</h2>
+        </section>
 
         <section class="education__section" id="education">
-            <h2 class="education__h2 global__h2">Mi <span class="education__span global__span">Trayecto</span></h2>
+            <h2 class="education__h2 global__h2">My <span class="education__span global__span">Journey</span></h2>
             <div class="education__div--row">
                 <div class="education__div--column">
-                    <h3 class="education__h3">Educación</h3>
+                    <h3 class="education__h3">Education</h3>
                     
                     <div class="education__div--box">
                         <article class="education__article">
                             <div class="education__div--content">
-                                <span class="education__span--year"><i class="fa-solid fa-calendar-days global__i"></i>2018 - Presente</span>
-                                <h4 class="education__h4">Ingeniería en Sistemas de la Información</h4>
+                                <span class="education__span--year"><i class="fa-solid fa-calendar-days global__i"></i>2018 - Present</span>
+                                <h4 class="education__h4">Information Systems Engineering</h4>
                                 <p class="education__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero optio quidem incidunt illo excepturi saepe totam iusto dicta 
                                     culpa animi?</p>
                             </div>
@@ -251,7 +291,7 @@
                         <article class="education__article">
                             <div class="education__div--content">
                                 <span class="education__span--year"><i class="fa-solid fa-calendar-days global__i"></i>2015 - 2018</span>
-                                <h4 class="education__h4">Ingeniería Industrial</h4>
+                                <h4 class="education__h4">Industrial Engineering</h4>
                                 <p class="education__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero optio quidem incidunt illo excepturi saepe totam iusto dicta 
                                     culpa animi?</p>
                             </div>
@@ -259,7 +299,7 @@
                         <article class="education__article">
                             <div class="education__div--content">
                                 <span class="education__span--year"><i class="fa-solid fa-calendar-days global__i"></i>2007 - 2010</span>
-                                <h4 class="education__h4">Tecnico Electronico - Hardware</h4>
+                                <h4 class="education__h4">Electronics Technician - Hardware</h4>
                                 <p class="education__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero optio quidem incidunt illo excepturi saepe totam iusto dicta 
                                     culpa animi?</p>
                             </div>
@@ -268,12 +308,12 @@
                 </div>
 
                 <div class="education__div--column">
-                    <h3 class="education__h3">Experiencia</h3>
+                    <h3 class="education__h3">Experience</h3>
                     <div class="education__div--box">
                         <article class="education__article">
                             <div class="education__div--content">
-                                <span class="education__span--year"><i class="fa-solid fa-calendar-days global__i"></i>2022 - Presente</span>
-                                <h4 class="education__h4">Desarrollador Web - Core Consulting S.A.</h4>
+                                <span class="education__span--year"><i class="fa-solid fa-calendar-days global__i"></i>2022 - Present</span>
+                                <h4 class="education__h4">Web Developer - Core Consulting S.A.</h4>
                                 <p class="education__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero optio quidem incidunt illo excepturi saepe totam iusto dicta 
                                     culpa animi?</p>
                             </div>
@@ -281,7 +321,7 @@
                         <article class="education__article">
                             <div class="education__div--content">
                                 <span class="education__span--year"><i class="fa-solid fa-calendar-days global__i"></i>2021 - 2022</span>
-                                <h4 class="education__h4">Analista Funcional SAP SRM - Core Consulting S.A.</h4>
+                                <h4 class="education__h4">Analyst Functional SAP SRM - Core Consulting S.A.</h4>
                                 <p class="education__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero optio quidem incidunt illo excepturi saepe totam iusto dicta 
                                     culpa animi?</p>
                             </div>
@@ -289,7 +329,7 @@
                         <article class="education__article">
                             <div class="education__div--content">
                                 <span class="education__span--year"><i class="fa-solid fa-calendar-days global__i"></i>2018 - 2021</span>
-                                <h4 class="education__h4">Técnico/Analista Funcional SAP - Indra S.A.</h4>
+                                <h4 class="education__h4">Analyst Technical/Functional SAP - Indra S.A.</h4>
                                 <p class="education__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero optio quidem incidunt illo excepturi saepe totam iusto dicta 
                                     culpa animi?</p>
                             </div>
@@ -301,43 +341,43 @@
         </section>
         
         <section class="contact__section" id="contact">
-            <h2 class="contact__h2 global__h2">Contacta<span class="global__span">me!</span></h2>
+            <h2 class="contact__h2 global__h2">Contact <span class="global__span">Me!</span> </h2>
             <form action="#" class="contact__form">
                 <div class="contact__div--fbox">
                     <div class="contact__div--field">
-                        <input type="text" placeholder="Nombre completo" required class="contact__input" name="fullName">
+                        <input type="text" placeholder="Full Name" required class="contact__input" name="fullName">
                         <span class="contact__span"></span>
                     </div>
                     <div class="contact__div--field">
-                        <input type="text" placeholder=" Tú email" class="contact__input" name="emailAdress" required>
+                        <input type="text" placeholder="Email Address" class="contact__input" name="emailAdress" required>
                         <span class="contact__span"></span>
                     </div>
                 </div>
                 <div class="contact__div--fbox">
                     <div class="contact__div--field">
-                        <input type="tel" maxlength="13" placeholder="Cel (13 characters max.)" class="contact__input" 
+                        <input type="tel" maxlength="13" placeholder="Mobile Number (13 characters max.)" class="contact__input" 
                             name="mobileNumber" required>
                         <span class="contact__span"></span>
                     </div>
                     <div class="contact__div--field">
-                        <input type="text" placeholder="Asunto" class="contact__input" name="emailsubject" required>
+                        <input type="text" placeholder="Email Subject" class="contact__input" name="emailsubject" required>
                         <span class="contact__span"></span>
                     </div>
                 </div>
                 <div class="contact__box--txt">
-                    <textarea name="message" id="" cols="30" rows="10" placeholder="Tú mensaje" class="contact__input contact__input--txt" 
+                    <textarea name="message" id="" cols="30" rows="10" placeholder="You Menssage" class="contact__input contact__input--txt" 
                         name="message" required></textarea>
                     <span class="contact__span"></span>
                 </div>
                 <div class="contact__article--box global__btn--box">
-                    <button type="submit" class="global__btn">Enviar</button>
+                    <button type="submit" class="global__btn">Submit</button>
                 </div>
             </form>
         </section>
 
         <footer class="footer">
             <article class="footer__article">
-                <p class="footer__p">Derechos de autor &copy; 2023 por Lombardi Matias | Todos los derechos reservados.</p>
+                <p class="footer__p">Copyright &copy; 2023 by Lombardi Matias | All Rights Reserverd.</p>
             </article>
             <article class="footer__article">
                 <a href="#" class="footer__a"><i class="fa-solid fa-angles-up footer__i"></i></a>
@@ -345,9 +385,9 @@
         </footer>
     
         <!-- Source Script -->
-        <script src="./js/variables.js"></script>
-        <script src="./js/app.js"></script>
-        <script src="./js/navbar.js"></script>
+        <script src="/script/variables.js"></script>
+        <script src="/script/navbar.js"></script>
+        <script src="/script/aplications.js"></script>
     </main>
 </body>
 </html>

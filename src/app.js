@@ -1,11 +1,10 @@
 import express from 'express';
-import {dirname} from 'path';
+import path, {dirname} from 'path';
 import { fileURLToPath } from 'url';
 import indexRoutes from './routes/index.js'
 
 const app = express();
-const __dirname = dirname(fileURLToPath(import.meta.url))
-console.log(__dirname)
+const __dirname = dirname(fileURLToPath(import.meta.url));
 
 app.use(express.static('public'));
 

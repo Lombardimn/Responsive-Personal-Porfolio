@@ -12,7 +12,7 @@ app.use(express.static('docs'));
 // app.use('/static', express.static('public'));
 
 app.get('/', (req, res) =>{
-    res.sendFile(join(__dirname, 'docs', 'views', __filename))
+    res.sendFile(join(__dirname, 'docs', __filename))
 });
 
 app.get('/porfolio-es', (req, res) =>{

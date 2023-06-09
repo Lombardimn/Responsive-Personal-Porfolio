@@ -40,8 +40,8 @@ window.addEventListener('load', () =>{
 
 
 // Download CV
-dcvBtn.addEventListener('click', function(){
-    let urlCv = '../file/cv_Lombardi.pdf';
+// dcvBtn.addEventListener('click', function(){
+    // let urlCv = '../file/cv_Lombardi.pdf';
 
     // fetch(urlCv)
     //     .then(response => response.blob())
@@ -56,17 +56,23 @@ dcvBtn.addEventListener('click', function(){
 
     //         provLink.click();
     //         document.body.removeChild(provLink);
-    //     });
+    //     });       
+// });
 
-        // Nombre del archivo PDF que se descargará
-        const nameFile = 'cv_lombardi_matias.pdf';
+const urlCv = 'https://github.com/Lombardimn/Responsive-Personal-Porfolio/blob/main/docs/file/cv_Lombardi.pdf';
 
-        // Crear un elemento <a> para el enlace de descarga
-        const linkDownload = document.createElement('a');
+dcvBtn.addEventListener('click', function(){
+        fetch(`https://cdn.rawgit.com/stevehoover/0d4c9f4a1b37f4db7db1a64a9e47be3f/rawgitproxy?url=${encodeURIComponent(urlCv)}`)
+            .then(response => response.blob())
+            .then(blob => {
+                const provLink = document.createElement('a');
+                provLink.href = URL.createObjectURL(blob);
+                provLink.download = 'cv_Lombardi.pdf';
 
-        // Establecer la URL del archivo PDF como el atributo "href" del enlace
-        linkDownload.href = urlCv;
+                provLink.style.display = 'none';
+                document.body.appendChild(provLink);
 
-        // Establecer el nombre del archivo PDF como el atributo "download" del enlace
-        linkDownload.download = nameFile;
-});
+                provLink.click();
+                document.body.removeChild(provLink);
+    });
+}); 

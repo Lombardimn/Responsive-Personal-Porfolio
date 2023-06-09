@@ -42,23 +42,35 @@ window.addEventListener('load', () =>{
 // Download CV
 dcvBtn.addEventListener('click', function(){
     let urlCv = '../file/cv_Lombardi.pdf';
-    // let provLink = document.createElement('a');
 
-    // provLink.setAttribute('href', urlCv);
-    // provLink.setAttribute('download', 'cv_Lombardi.pdf');
-
-    fetch(urlCv)
-        .then(response => response.blob())
-        .then(blob => {
-            let provLink = document.createElement('a');
-            provLink.href = URL.createObjectURL(blob);
-            provLink.download = 'cv_Lombardi.pdf'; // Reemplaza con el nombre deseado para el archivo descargado
+    // fetch(urlCv)
+    //     .then(response => response.blob())
+    //     .then(blob => {
+    //         let provLink = document.createElement('a');
+    //         provLink.href = URL.createObjectURL(blob);
+    //         provLink.download = 'cv_Lombardi.pdf'; // Reemplaza con el nombre deseado para el archivo descargado
 
 
-            provLink.style.display = 'none';
-            document.body.appendChild(provLink);
+    //         provLink.style.display = 'none';
+    //         document.body.appendChild(provLink);
 
-            provLink.click();
-            document.body.removeChild(provLink);
-        });
+    //         provLink.click();
+    //         document.body.removeChild(provLink);
+    //     });
+
+        // Nombre del archivo PDF que se descargará
+        const nameFile = 'cv_lombardi_matias.pdf';
+
+        // Crear un elemento <a> para el enlace de descarga
+        const linkDownload = document.createElement('a');
+
+        // Establecer la URL del archivo PDF como el atributo "href" del enlace
+        linkDownload.href = urlCv;
+
+        // Establecer el nombre del archivo PDF como el atributo "download" del enlace
+        linkDownload.download = nameFile;
+
+        // Simular el clic en el enlace de descarga
+        linkDownload.click();
+
 });

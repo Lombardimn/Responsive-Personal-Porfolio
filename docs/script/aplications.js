@@ -27,7 +27,7 @@ btnSwitch.addEventListener('change', function(){
     let flagState = btnSwitch.checked;
 
     if (flagState === true){
-        window.location.href = '/porfolio-es';
+        window.location.href = '/es';
     } else {
         window.location.href = '/#';
     }

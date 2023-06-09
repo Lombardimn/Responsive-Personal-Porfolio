@@ -69,8 +69,4 @@ dcvBtn.addEventListener('click', function(){
 
         // Establecer el nombre del archivo PDF como el atributo "download" del enlace
         linkDownload.download = nameFile;
-
-        // Simular el clic en el enlace de descarga
-        linkDownload.click();
-
 });

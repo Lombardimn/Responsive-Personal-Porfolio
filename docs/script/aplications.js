@@ -59,7 +59,7 @@ window.addEventListener('load', () =>{
     //     });       
 // });
 
-const urlCv = 'https://github.com/Lombardimn/Responsive-Personal-Porfolio/blob/main/docs/file/cv_Lombardi.pdf';
+const urlCv = 'https://raw.githubusercontent.com/Lombardimn/Responsive-Personal-Porfolio/blob/main/docs/file/cv_Lombardi.pdf';
 
 dcvBtn.addEventListener('click', function(){
         fetch(`https://cdn.rawgit.com/stevehoover/0d4c9f4a1b37f4db7db1a64a9e47be3f/rawgitproxy?url=${encodeURIComponent(urlCv)}`)

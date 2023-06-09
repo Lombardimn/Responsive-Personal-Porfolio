@@ -2,11 +2,12 @@ import express from 'express';
 import path, {dirname} from 'path';
 import { fileURLToPath } from 'url';
 import indexRoutes from './routes/index.js'
+import { appendFile } from 'fs';
 
 const app = express();
 const __dirname = dirname(fileURLToPath(import.meta.url));
-
-app.use(express.static('public'));
+console.log(__dirname)
+app.use(express.static('docs'));
 // app.use('/static', express.static('public'));
 
 
